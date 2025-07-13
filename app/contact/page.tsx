@@ -1,27 +1,27 @@
 "use client";
-import { Github, Mail, Twitter } from "lucide-react";
+import { Flame, Mail, Linkedin } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 
 const socials = [
 	{
-		icon: <Twitter size={20} />,
-		href: "https://twitter.com/chronark_",
+		icon: <Linkedin size={20} />,
+		href: "https://linkedin.com/chivaapp",
 		label: "Twitter",
-		handle: "@chronark_",
+		handle: "@chivaapp",
 	},
 	{
 		icon: <Mail size={20} />,
-		href: "mailto:dev@chronark.com",
+		href: "mailto:dev@quantuminnovationadvisors.com",
 		label: "Email",
-		handle: "dev@chronark.com",
+		handle: "dev@quantuminnovationadvisors.com",
 	},
 	{
-		icon: <Github size={20} />,
-		href: "https://github.com/chronark",
-		label: "Github",
-		handle: "chronark",
+		icon: <Flame size={20} />,
+		href: "https://chivaapp.com",
+		label: "Web",
+		handle: "Chiva",
 	},
 ];
 
