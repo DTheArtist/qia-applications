@@ -43,7 +43,7 @@ export default function Home() {
 					>
 						Chi'Va
 					</Link>
-					to help entrepreneurs and business leaders boost mental
+					 to help entrepreneurs and business leaders boost mental
 					performance, sharpen decision-making, and sustain peak
 					output without burnout.
 				</h2>
