@@ -8,6 +8,73 @@ repository: chronark/unkey
 ---
 
 
-[![](https://unkey.dev/images/landing/app.png)](https://unkey.dev)
+---
+slug: architecture-led-digital-transformation
+client: "Chi’Va Neurotech"
+title: "Architecture‑Led Digital Transformation for a Neurotech Platform"
+summary: |
+  Defined and led the technology strategy behind Chi’Va’s AI‑driven mental‑performance platform, building a secure, modular architecture that integrates neuroscience protocols, metrics tracking, and compliance frameworks.
+role: "Fractional CTO & Chief Architect"
+timeframe: "2023 – 2025"
+heroImage: "/images/case‑studies/chi‑va‑architecture.jpg" # suggested hero image path
+focus:
+  - Scalable Architecture
+  - Data Infrastructure
+  - Automation Systems
+expertise:
+  - CTO Leadership
+  - HIPAA Alignment
+  - Cloud‑Native Architecture
+---
 
-Unkey is an open source API Key management solution. It allows you to create, manage and validate API Keys for your users. It’s built with security and speed in mind.
+import CaseStudyHeader from '@/components/CaseStudyHeader'
+import OutcomeMetric from '@/components/OutcomeMetric'
+
+<CaseStudyHeader
+  client="Chi’Va"
+  role="Fractional CTO & Chief Architect"
+  timeframe="2023 – 2025"
+  focus={["Architecture", "Data Infrastructure", "Automation"]}
+/>
+
+## Challenge
+
+Chi’Va set out to build a neurotech platform capable of delivering AI‑guided mental‑performance protocols at clinical‑grade security and scale.  
+Early prototypes proved the concept, but the underlying stack was brittle—data silos, ad‑hoc DevOps, and no clear HIPAA posture were constraining growth.
+
+## Strategy
+
+1. **Modular cloud‑native architecture** – decomposed the monolith into containerized services on AWS Fargate & Lambda managed via IaC (Pulumi).
+2. **Unified data layer** – designed a Postgres + DynamoDB hybrid to separate transactional workloads from low‑latency session storage, enabling analytics pipelines without throttling live traffic.
+3. **Compliance‑by‑design** – mapped every data flow to HIPAA safeguards, codified encryption‑at‑rest/‑in‑transit, audit logging, and a BAA‑ready vendor matrix.
+4. **Automation first** – GitHub Actions CI/CD, infrastructure drift detection, and health‑probe based auto‑rollbacks to keep releases boring.
+
+## Execution Highlights
+
+- **Reference architecture** published in C4 diagrams and ADRs adopted by cross‑functional squads.  
+- **Event‑driven metric ingestion** funnels session SUDs, VoC, and belief statements into a normalized schema, powering longitudinal insights.  
+- **Zero‑trust perimeter** with AWS Cognito, short‑lived JWTs, and micro‑segmented VPC endpoints.  
+- **Cost guardrails** keep monthly infra spend under **US $400** while sustaining **10× user growth**.
+
+## Outcomes
+
+<OutcomeMetric label="99.99% uptime" />
+<OutcomeMetric label="≤150 ms median response" />
+<OutcomeMetric label="SOC‑2 audit readiness in 6 weeks" />
+<OutcomeMetric label="40% infrastructure cost reduction vs baseline" />
+
+## What This Demonstrates
+
+- Vision‑level **CTO leadership** translating neuroscience objectives into executable architecture.  
+- Mastery of **cloud‑native patterns** and **infrastructure automation**.  
+- Proven track record aligning **HIPAA & SOC‑2** requirements with rapid product iteration.
+
+## Relevance to QIA Clients
+
+If your organization needs a strategic technology partner to turn complex regulatory or scientific mandates into scalable digital products, QIA delivers the architecture, processes, and leadership to get you there—securely and cost‑effectively.
+
+---
+
+### Suggested Hero Image
+
+> A stylized neural network overlayed on a cloud infrastructure diagram in Chi’Va’s violet‑indigo gradient palette (#7C3AED → #6366F1). Clean, glowing linework highlights modular services and secure data flows—perfect for the case‑study hero.
