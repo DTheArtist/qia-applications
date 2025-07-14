@@ -1,0 +1,45 @@
+---
+title: Strategic R&D Implementation for AI + LLM Integration
+description: >
+  Piloted agent-based tooling and prompt scaffolds inside Chi’Va, enabling
+  contextual recall, performance-state classification, and session-aware coaching
+  logic—all while controlling inference costs through precision architecture.
+date: "2025-07-13"
+url: https://chivaapp.com
+published: true
+---
+
+## Challenge  
+Chi’Va needed to transform research on large language models into
+production-grade features—without runaway token spend or degraded accuracy.
+
+## Strategy  
+* Spin up an **internal R&D lane** isolated from core prod, using feature flags
+  for safe user opt-in.  
+* Build **prompt-engineering templates** that inject session history,
+  neuroscience cues, and user metrics deterministically.  
+* Instrument every call with **cost & latency dashboards** so experiments are
+  judged by precision and spend.
+
+## Execution  
+1. Deployed an **Agentic toolkit** (Next.js API routes + LangChain) supporting
+   memory recall, state classification, and protocol-step sequencing.  
+2. Added vector-store retrieval with embeddings tuned on Chi’Va’s domain
+   glossary for higher factuality.  
+3. Implemented **dynamic model routing**: GPT-4o for high-stakes steps,
+   Claude-Haiku for low-stakes summaries—cutting average cost per session by
+   roughly 55 %.  
+4. Integrated OpenTelemetry spans to surface token usage, latency, and
+   hallucination flags in real time.
+
+## Outcomes  
+* Prototype reached **95 % precision** in performance-state classification
+  during closed beta.  
+* Average inference spend held **under 10 ¢ per user session**.  
+* Enabled launch of an LLM-guided “performance check-in” feature in&nbsp;6 weeks
+  versus the previous 3-month roadmap estimate.
+
+## Key Capabilities Demonstrated  
+* AI product strategy & LLM systems design  
+* Cost-aware NLP engineering  
+* Framework for rapid experimentation without risking production stability
