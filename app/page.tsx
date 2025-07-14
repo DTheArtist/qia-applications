@@ -42,8 +42,8 @@ export default function Home() {
 						className="underline duration-500 hover:text-zinc-300"
 					>
 						Chi'Va
-					</Link>
-					 to help entrepreneurs and business leaders boost mental
+					</Link>{" "}
+					to help entrepreneurs and business leaders boost mental
 					performance, sharpen decision-making, and sustain peak
 					output without burnout.
 				</h2>
