@@ -1,45 +1,51 @@
 ---
-title: Real-Time Insight Engine for MarketReader
+title: Real-Time Edge Analytics Platform for Democratized Alpha
 description: >
-  Translated market micro-structure data into
-  real-time, ML-powered signals and interactive dashboards—giving traders
-  instant context on price moves without information overload.
-date: "2023-05-04"
+  Converted raw exchange and alt-data firehoses into sub-second, explainable
+  signals that retail-broker partners can surface to millions of end traders—
+  shifting MarketReader from one-off data licensing to a scalable SaaS model.
+date: "2025-07-13"
 url: https://marketreader.com
 published: true
 ---
 
 ## Challenge  
-Retail and professional traders drown in news feeds yet still miss the **why**
-behind sudden price swings. MarketReader needed a low-latency signal engine and
-UX that explains moves in plain language.
+Retail traders drown in headline latency and opaque signals, while
+institutional-grade streams remain gated behind high fees and NDAs. MarketReader
+needed a real-time analytics layer that meets FINRA fair-disclosure standards and
+scales to millions of concurrent users without exchange-rule violations.
 
 ## Strategy  
-* Build a **streaming data platform** ingesting tick-level quotes, options
-  flow, and curated news.  
-* Train **explainable ML models** that rank drivers by statistical impact and
-  confidence.  
-* Design a **single-pane dashboard** surfacing signals, context sentences, and
-  drill-downs in &lt;2 s from detection to display.
+* Build a **high-throughput ingestion mesh** that fuses multi-venue trade data
+  with alt-data (news sentiment, options flow) in milliseconds.  
+* Deploy an **online feature store** plus auto-retraining ML pipelines to detect
+  micro-alpha opportunities as they emerge.  
+* Add an **explainability layer**—Shapley value scoring + narrative synthesis—
+  so every alert shows causal factors regulators can audit.  
+* Package outputs into a **tiered API** and white-label widgets for broker
+  integration (web & mobile).
 
 ## Execution  
-1. Deployed a Kafka + Flink pipeline processing 2 M msgs / s with sub-second
-   lag.  
-2. Implemented gradient-boosted models plus SHAP scoring for transparent driver
-   attribution.  
-3. Crafted a React + WebGL visualization layer that streams updates without page
-   reloads.  
-4. Launched a freemium API tier and self-serve onboarding, reducing sales touch
-   for hobby traders.
+1. Negotiated exchange and alt-data contracts, cutting raw-feed latency to
+   &lt;5 ms hop.  
+2. Led a cross-functional **“ML platform guild”**: data engineers, quants, and
+   product designers collaborated on feature pipelines and UI surfacing.  
+3. Implemented model-risk governance: bias tests, drift alerts, and kill
+   switches wired into CI/CD.  
+4. Launched tiered pricing—free delayed feed, real-time retail, and pro API—
+   backed by partner GTM playbooks.
 
 ## Outcomes  
-* Platform handles **5 ×** the user load since public beta, maintaining
-  99.95 % uptime.  
-* Average time from market event to user alert is **1.3 s** (95th percentile).  
-* Early adopters report **30 %** faster trade-decision cycles and lower
-  headline-risk anxiety.
+* Achieved **sub-200 ms end-to-end signal latency** from tick to alert.  
+* Secured three retail-broker integrations at launch, putting the platform in
+  front of **2.4 million** active accounts.  
+* Transitioned revenue mix from 100 % one-off deals to **65 % recurring SaaS**
+  within two quarters.  
+* Passed FINRA disclosure review with zero findings, thanks to built-in
+  explainability.
 
 ## Key Capabilities Demonstrated  
-* Streaming data architecture & low-latency ML  
-* Product strategy balancing pro-grade power with retail simplicity  
-* Scalable, explainable AI delivering actionable market context
+* Chief Product & Data Strategy leadership  
+* High-throughput data architecture & auto-retraining ML pipelines  
+* Explainable-AI design that satisfies regulatory scrutiny  
+* Pricing & GTM frameworks for scalable SaaS subscriptions
