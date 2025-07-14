@@ -1,0 +1,47 @@
+---
+title: Strategic Automation Framework for Quote Lifecycle Management
+description: >
+  Designed and deployed a cloud-native quoting engine for House of Juice that
+  replaces spreadsheets with Lambda-powered workflows, hybrid DynamoDB + PostgreSQL
+  storage, and real-time dashboards. HTML quotes now auto-generate in seconds,
+  cutting manual effort and operational cost.
+date: "2025-07-13"
+url: https://houseofjuice.com
+published: true
+---
+
+## Challenge  
+House of Juice’s event-service team relied on email threads and Excel sheets to
+price corporate activations. The manual process delayed responses, produced
+version-control mistakes, and provided no visibility into quote status.
+
+## Strategy  
+* Architect a **serverless, event-driven pipeline** on AWS: API Gateway →
+  Lambda → DynamoDB for hot reads, with periodic sync to PostgreSQL for
+  reporting.  
+* Generate **print-ready HTML quotes** on-the-fly to avoid PDF storage and
+  bandwidth fees.  
+* Build a React dashboard that surfaces quote cards, status buttons, and live
+  metrics for managers.
+
+## Execution  
+1. **QuoteCalculator Lambda** ingests form data, computes pricing tiers, and
+   writes to DynamoDB (JSON) + PostgreSQL (relational).  
+2. **QuoteNotifications Lambda** pulls DB entries, renders tailwind-styled HTML,
+   emails clients, and updates dashboard cards via WebSocket.  
+3. **Cost-aware design**: provisioned concurrency only during business hours,
+   S3-cached assets, and IAM least privilege policies.  
+4. CI/CD with AWS SAM pipelines and unit tests for price-rule integrity.
+
+## Outcomes  
+* Turnaround time for a new quote dropped from **>24 h to ≈2 min**.  
+* Managers gained **live visibility** into every quote’s lifecycle; no more
+  stale spreadsheets.  
+* Infrastructure spend stayed under **$25 mo.** on the AWS Free Tier plus spot
+  allocations.  
+* Error rate in quote data entry reduced **95 %** through automated validation.
+
+## Key Capabilities Demonstrated  
+* AWS serverless architecture & hybrid data modeling  
+* Workflow automation and real-time dashboards  
+* Cost-optimized engineering and resource governance
