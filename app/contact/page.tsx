@@ -6,10 +6,10 @@ import { Card } from "../components/card";
 
 const socials = [
 	{
-		icon: <Mail size={20} />,
+		icon: <Linkedin size={20} />,
 		href: "https://www.linkedin.com/newsletters/quantum-leadership-insights-7097996845984989184/",
-		label: "Newsletter",
-		handle: "QIA leadership insights",
+		label: "Linkedin Newsletter",
+		handle: "QIA Insights",
 	},
 	{
 		icon: <Flame size={20} />,

@@ -1,0 +1,45 @@
+---
+title: Real-Time Insight Engine for MarketReader
+description: >
+  Translated market micro-structure data into
+  real-time, ML-powered signals and interactive dashboards—giving traders
+  instant context on price moves without information overload.
+date: "2023-05-04"
+url: https://marketreader.com
+published: true
+---
+
+## Challenge  
+Retail and professional traders drown in news feeds yet still miss the **why**
+behind sudden price swings. MarketReader needed a low-latency signal engine and
+UX that explains moves in plain language.
+
+## Strategy  
+* Build a **streaming data platform** ingesting tick-level quotes, options
+  flow, and curated news.  
+* Train **explainable ML models** that rank drivers by statistical impact and
+  confidence.  
+* Design a **single-pane dashboard** surfacing signals, context sentences, and
+  drill-downs in &lt;2 s from detection to display.
+
+## Execution  
+1. Deployed a Kafka + Flink pipeline processing 2 M msgs / s with sub-second
+   lag.  
+2. Implemented gradient-boosted models plus SHAP scoring for transparent driver
+   attribution.  
+3. Crafted a React + WebGL visualization layer that streams updates without page
+   reloads.  
+4. Launched a freemium API tier and self-serve onboarding, reducing sales touch
+   for hobby traders.
+
+## Outcomes  
+* Platform handles **5 ×** the user load since public beta, maintaining
+  99.95 % uptime.  
+* Average time from market event to user alert is **1.3 s** (95th percentile).  
+* Early adopters report **30 %** faster trade-decision cycles and lower
+  headline-risk anxiety.
+
+## Key Capabilities Demonstrated  
+* Streaming data architecture & low-latency ML  
+* Product strategy balancing pro-grade power with retail simplicity  
+* Scalable, explainable AI delivering actionable market context
