@@ -1,0 +1,46 @@
+---
+title: Data Architecture Modernization for Performance Insights
+description: >
+  Re-engineered Chi’Va’s data schemas and event pipelines to capture,
+  normalize, and visualize mental-performance metrics across user cohorts.
+  The new stack delivers real-time insight dashboards and deep historical
+  analysis without sacrificing data integrity.
+date: "2025-07-13"
+url: https://chivaapp.com
+published: true
+---
+
+## Challenge  
+Legacy event logs and ad-hoc tables made it impossible to correlate
+session-level metrics with long-term outcomes. Analysts spent hours wrangling
+CSV exports instead of generating insights.
+
+## Strategy  
+* Standardize every metric with a **normalized star schema**—sessions, events,
+  scores, and cohorts linked by surrogate keys.  
+* Introduce an **event-tracking layer** (Kafka → ClickHouse) that writes once,
+  serves many: real-time dashboards and batch analytics.  
+* Embed observability hooks so data contracts break loudly rather than
+  silently.
+
+## Execution  
+1. Migrated siloed tables to **PostgreSQL + Timescale** partitions for time-
+   series efficiency.  
+2. Deployed **Kafka Connect** streams that validate event envelopes and enrich
+   with user traits before landing in ClickHouse.  
+3. Built Grafana boards and Metabase templates for product and research teams
+   to slice metrics by cohort, feature flag, or time window.  
+4. Added **schema-registry checks** in CI—pipelines fail if a field changes
+   without version bump.
+
+## Outcomes  
+* Query latency for 30-day cohort reports fell from minutes to sub-second.  
+* Analysts cut manual data-prep time by **80 %**, focusing on insight rather
+  than cleanup.  
+* Real-time performance heatmaps now update within &lt;5 s of a session event,
+  enabling live A/B tuning.
+
+## Key Capabilities Demonstrated  
+* Robust schema design for longitudinal data  
+* Event-tracking architecture & observability  
+* Scalable pipelines that balance real-time and historical workloads
