@@ -7,21 +7,27 @@ import { Card } from "../components/card";
 const socials = [
 	{
 		icon: <Linkedin size={20} />,
-		href: "https://linkedin.com/chivaapp",
-		label: "Twitter",
-		handle: "@chivaapp",
+		href: "https://www.linkedin.com/company/quantum-innovation-advisors/",
+		label: "Linkedin",
+		handle: "Q.I.A.",
 	},
 	{
 		icon: <Mail size={20} />,
-		href: "mailto:dev@quantuminnovationadvisors.com",
-		label: "Email",
-		handle: "dev@quantuminnovationadvisors.com",
+		href: "https://www.linkedin.com/newsletters/quantum-leadership-insights-7097996845984989184/",
+		label: "Newsletter",
+		handle: "quantum leadership insights",
 	},
 	{
 		icon: <Flame size={20} />,
 		href: "https://chivaapp.com",
-		label: "Web",
-		handle: "Chiva",
+		label: "Platform Access",
+		handle: "Try Chi'Va",
+	},
+	{
+		icon: <Linkedin size={20} />,
+		href: "https://www.linkedin.com/company/chivaapp/",
+		label: "Linkedin",
+		handle: "Chi'Va",
 	},
 ];
 
