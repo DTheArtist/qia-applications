@@ -28,7 +28,7 @@ export default function Home() {
 				className="absolute inset-0 -z-10 animate-fade-in"
 				quantity={100}
 			/>
-			<h1 className="py-3.5 px-0.5 z-10 text-7xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display whitespace-nowrap bg-clip-text ">
+			<h1 className="py-3.5 px-0.5 z-10 text-7xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display bg-clip-text ">
 				quantum innovation advisors
 			</h1>
 
