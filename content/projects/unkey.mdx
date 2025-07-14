@@ -10,4 +10,38 @@ repository: chronark/unkey
 
 [![](https://unkey.dev/images/landing/app.png)](https://unkey.dev)
 
-Unkey is an open source API Key management solution. It allows you to create, manage and validate API Keys for your users. It’s built with security and speed in mind.
+## Challenge  
+Chi’Va needed to evolve from a proof-of-concept into a secure, enterprise-grade
+neurotech platform—capable of handling protected health data, real-time
+AI-driven workflows, and rapid user-base growth, all without ballooning
+infrastructure costs.
+
+## Strategy  
+* Map every user journey to a services layer and data boundary.  
+* Adopt a **layered cloud pattern**—isolating the AI engine, secure data lake,
+  and compliance pipeline behind API gateways.  
+* Embed “governance-by-design”: infrastructure as code, automated PHI
+  encryption, audit-trail logging, and least-privilege IAM policies.
+
+## Execution  
+1. **Modular micro-services** on AWS Fargate + Lambda for elastic scale.  
+2. **Secure data lake** (S3 + Lake Formation) partitioned by tenant and epoch.  
+3. **Compliance pipeline** that hashes every event to an immutable ledger
+   (AWS QLDB) and auto-generates HIPAA access reports.  
+4. **Observability stack** (OpenTelemetry → Grafana) surfacing SLO drift and
+   inference latency in real time.  
+5. CI/CD with automated threat-model tests and drift detection.
+
+## Outcomes  
+* Platform now serves **10 × user load** with **&lt;150 ms median latency**.  
+* Passed third-party HIPAA audit on first attempt—zero critical findings.  
+* Reduced monthly cloud spend **38 %** through right-sizing and spot-instance
+  strategies.  
+* Engineering cycle time dropped from weekly to **daily** deploys via full
+  IaC pipeline.
+
+## Key Capabilities Demonstrated  
+* CTO-level architecture leadership  
+* Cloud-native scalability & cost optimisation  
+* Built-in compliance (HIPAA, SOC 2 groundwork)  
+* Data-informed product decisions through rich observability
